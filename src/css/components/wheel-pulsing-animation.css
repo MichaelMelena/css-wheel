@@ -32,15 +32,21 @@
   background-color: transparent;
   overflow: visible;
   animation-duration: calc(var(--wheel-spin-duration) * 2);
-  animation-delay: calc(var(--wheel-spin-duration) * 2);
+  
 }
+
+.wheel-pulsing-animation .wheel-center{
+  display: none;
+}
+
 .wheel-pulsing-animation :nth-child(even) {
   animation-name: wheel-section-pulse;
   animation-duration: calc(var(--wheel-spin-duration) * 4);
-  animation-delay: calc(var(--wheel-spin-duration) * 2);
+  transform: rotate(360deg) scale(1.2);
 }
 .wheel-pulsing-animation :nth-child(odd) {
   animation-name: wheel-section-pulse;
   animation-duration: calc(var(--wheel-spin-duration) * 4);
-  animation-delay: calc(var(--wheel-spin-duration) * 4);
+  animation-delay: calc(var(--wheel-spin-duration) * 2);
+  transform: rotate(0deg);
 }
