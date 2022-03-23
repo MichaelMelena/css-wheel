@@ -1,0 +1,39 @@
+@keyframes wheel-fluid {
+  0% {
+    background-color: var(--wheel-section-hover);
+  }
+  100% {
+    background-color: var(--wheel-section);
+  }
+}
+
+.wheel-fluid-animation > .wheel-section {
+  animation-name: wheel-fluid;
+}
+.wheel-fluid-animation :first-child {
+  animation-delay: 0;
+}
+
+.wheel-fluid-animation :nth-child(2) {
+  animation-delay: calc(var(--wheel-spin-duration) / 8);
+}
+
+.wheel-fluid-animation :nth-child(3) {
+  animation-delay: calc(2 * var(--wheel-spin-duration) / 8);
+}
+
+.wheel-fluid-animation :nth-child(4) {
+  animation-delay: calc(3 * var(--wheel-spin-duration) / 8);
+}
+.wheel-fluid-animation :nth-child(5) {
+    animation-delay: calc(4 * var(--wheel-spin-duration) / 8);
+}
+.wheel-fluid-animation :nth-child(6) {
+    animation-delay: calc(5 * var(--wheel-spin-duration) / 8);
+}
+.wheel-fluid-animation :nth-child(7) {
+    animation-delay: calc(6 * var(--wheel-spin-duration) / 8);
+}
+.wheel-fluid-animation :nth-child(8) {
+    animation-delay: calc(7 * var(--wheel-spin-duration) / 8);
+}

@@ -18,12 +18,6 @@
   animation-timing-function: ease-in-out;
 }
 
-
-
-.no-animation{
-  animation: none;
-}
-
 .no-animation > .wheel-section{
   animation: none;
 }
