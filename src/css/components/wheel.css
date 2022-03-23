@@ -2,10 +2,10 @@
   height: 9.24rem;
   width: 9.24rem;
   background-color: var(--wheel-section);
-  position: absolute;
+  position: relative;
   border-radius: 50%;
   overflow: hidden;
-} 
+}
 
 .wheel-section {
   width: 3.82rem;
@@ -16,6 +16,16 @@
   animation-duration: var(--wheel-spin-duration);
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+
+
+.no-animation{
+  animation: none;
+}
+
+.no-animation > .wheel-section{
+  animation: none;
 }
 
 .wheel-center {
@@ -29,23 +39,20 @@
 }
 
 .wheel-section:hover {
-  background-color: #a5ffa5;
+  background-color: var(--wheel-section-hover);
 }
 
 .wheel :first-child {
   left: 2.71rem;
-  animation-name: wheel-1;
 }
 
 .wheel :nth-child(2) {
   left: 4.37rem;
   top: 0.66rem;
   transform: rotate(45deg);
-  animation-name: wheel-2;
 }
 .wheel :nth-child(3) {
   transform: rotate(90deg);
-  animation-name: wheel-3;
   right: 0.39rem;
   top: 2.31rem;
 }
@@ -54,33 +61,28 @@
   transform: rotate(135deg);
   left: 4.37rem;
   bottom: 0.66rem;
-  animation-name: wheel-4;
 }
 
 .wheel :nth-child(5) {
   transform: rotate(180deg);
   bottom: 0;
   left: 2.71rem;
-  animation-name: wheel-5;
 }
 
 .wheel :nth-child(6) {
   transform: rotate(225deg);
   right: 4.37rem;
   bottom: 0.66rem;
-  animation-name: wheel-6;
 }
 
 .wheel :nth-child(7) {
   transform: rotate(270deg);
   top: 2.31rem;
   left: 0.39rem;
-  animation-name: wheel-7;
 }
 
 .wheel :nth-child(8) {
   transform: rotate(315deg);
   top: 0.66rem;
   right: 4.37rem;
-  animation-name: wheel-8;
 }

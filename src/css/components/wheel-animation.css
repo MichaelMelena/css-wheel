@@ -89,10 +89,38 @@
   100% {
     background-color: var(--wheel-section-hover);
   }
-  0%{
+  0% {
     background-color: var(--wheel-section-hover);
   }
   25% {
     background-color: var(--wheel-section);
   }
+}
+
+.wheel-simple-animation :first-child {
+  animation-name: wheel-1;
+}
+
+.wheel-simple-animation :nth-child(2) {
+  animation-name: wheel-2;
+}
+
+.wheel-simple-animation :nth-child(3) {
+  animation-name: wheel-3;
+}
+
+.wheel-simple-animation :nth-child(4) {
+  animation-name: wheel-4;
+}
+.wheel-simple-animation :nth-child(5) {
+  animation-name: wheel-5;
+}
+.wheel-simple-animation :nth-child(6) {
+  animation-name: wheel-6;
+}
+.wheel-simple-animation :nth-child(7) {
+  animation-name: wheel-7;
+}
+.wheel-simple-animation :nth-child(8) {
+  animation-name: wheel-8;
 }
