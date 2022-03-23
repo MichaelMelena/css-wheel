@@ -29,15 +29,18 @@
   animation-name: wheel-pulse;
   animation-duration: var(--wheel-spin-duration);
   animation-iteration-count: infinite;
-
+  background-color: transparent;
+  overflow: visible;
   animation-duration: calc(var(--wheel-spin-duration) * 2);
+  animation-delay: calc(var(--wheel-spin-duration) * 2);
 }
 .wheel-pulsing-animation :nth-child(even) {
   animation-name: wheel-section-pulse;
   animation-duration: calc(var(--wheel-spin-duration) * 4);
+  animation-delay: calc(var(--wheel-spin-duration) * 2);
 }
 .wheel-pulsing-animation :nth-child(odd) {
   animation-name: wheel-section-pulse;
   animation-duration: calc(var(--wheel-spin-duration) * 4);
-  animation-delay: calc(var(--wheel-spin-duration) * 2);
+  animation-delay: calc(var(--wheel-spin-duration) * 4);
 }
