@@ -6,6 +6,7 @@
   position: absolute;
   border-radius: 50%;
   border: 0.25rem solid var(--wheel-border);
+  transform: rotate(15deg);
 }
 
 .wheel-section {

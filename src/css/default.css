@@ -7,7 +7,7 @@
   --wheel-center: #ffa500;
   --wheel-section: #00a5ff;
   --wheel-section-hover: #f00;
-  --wheel-spin-duration: 5s;
+  --wheel-spin-duration: 1s;
 }
 
 body {
