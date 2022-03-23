@@ -22,6 +22,9 @@
 .no-animation > .wheel-section{
   animation: none;
 }
+.no-animation > .wheel-section:hover {
+  background-color: var(--wheel-section-hover);
+}
 
 .wheel-center {
   width: 1rem;
@@ -31,10 +34,6 @@
   left: calc(50% - 0.5rem);
   top: calc(50% - 0.5rem);
   position: relative;
-}
-
-.wheel-section:hover {
-  background-color: var(--wheel-section-hover);
 }
 
 .wheel :first-child {
