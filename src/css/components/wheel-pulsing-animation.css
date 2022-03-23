@@ -13,12 +13,15 @@
 @keyframes wheel-section-pulse {
   0% {
     background-color: var(--wheel-section);
+    transform: rotate(0deg);
   }
   50% {
     background-color: var(--wheel-section-hover);
+    transform: rotate(180deg);
   }
   100% {
     background-color: var(--wheel-section);
+    transform: rotate(360deg);
   }
 }
 
