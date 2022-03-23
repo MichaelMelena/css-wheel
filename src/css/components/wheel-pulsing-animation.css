@@ -1,0 +1,40 @@
+@keyframes wheel-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes wheel-section-pulse {
+  0% {
+    background-color: var(--wheel-section);
+  }
+  50% {
+    background-color: var(--wheel-section-hover);
+  }
+  100% {
+    background-color: var(--wheel-section);
+  }
+}
+
+.wheel-pulsing-animation {
+  animation-name: wheel-pulse;
+  animation-duration: var(--wheel-spin-duration);
+  animation-iteration-count: infinite;
+
+  animation-duration: calc(var(--wheel-spin-duration) * 2);
+}
+.wheel-pulsing-animation :nth-child(even) {
+  animation-name: wheel-section-pulse;
+  animation-duration: calc(var(--wheel-spin-duration) * 4);
+}
+.wheel-pulsing-animation :nth-child(odd) {
+  animation-name: wheel-section-pulse;
+  animation-duration: calc(var(--wheel-spin-duration) * 4);
+  animation-delay: calc(var(--wheel-spin-duration) * 2);
+}
