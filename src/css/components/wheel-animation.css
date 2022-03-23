@@ -1,0 +1,100 @@
+
+
+@keyframes wheel-1 {
+  0% {
+    background-color: var(--wheel-section);
+  }
+  12.5% {
+    background-color: var(--wheel-section-hover);
+  }
+  25%{
+      background-color: var(--wheel-section);
+  }
+}
+
+@keyframes wheel-2 {
+  0% {
+    background-color: var(--wheel-section-hover);
+  }
+  12.5% {
+    background-color: var(--wheel-section);
+  }
+}
+
+@keyframes wheel-3 {
+  12.5% {
+    background-color: var(--wheel-section-hover);
+  }
+  25% {
+    background-color: var(--wheel-section);
+  }
+}
+
+@keyframes wheel-4 {
+  25% {
+    background-color: var(--wheel-section-hover);
+  }
+  37.5% {
+    background-color: var(--wheel-section);
+  }
+}
+
+@keyframes wheel-5 {
+  37.5% {
+    background-color: var(--wheel-section-hover);
+  }
+  50% {
+    background-color: var(--wheel-section);
+  }
+}
+
+@keyframes wheel-6 {
+  50% {
+    background-color: var(--wheel-section-hover);
+  }
+  62.5% {
+    background-color: var(--wheel-section);
+  }
+}
+
+@keyframes wheel-7 {
+  62.5% {
+    background-color: var(--wheel-section-hover);
+  }
+
+  75% {
+    background-color: var(--wheel-section);
+  }
+}
+
+@keyframes wheel-8 {
+  75% {
+    background-color: var(--wheel-section-hover);
+  }
+  87.5% {
+    background-color: var(--wheel-section);
+  }
+}
+
+/* 
+
+  0% {
+      background-color: var(wheel-section-hover);
+  }
+  12.5% {
+  }
+  25% {
+  }
+  50% {
+  }
+  62.5% {
+  }
+  75% {
+  }
+  87.5% {
+  }
+  100% {
+      
+  }
+
+*/

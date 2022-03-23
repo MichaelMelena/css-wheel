@@ -1,0 +1,21 @@
+:root {
+  --color: #222;
+  --bg-color: #eee;
+
+  /* wheel variables */
+  --wheel-border: #ffa500;
+  --wheel-center: #ffa500;
+  --wheel-section: #00a5ff;
+  --wheel-section-hover: #f00;
+  --wheel-spin-duration: 5s;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color);
+  background-color: var(--bg-color);
+}
