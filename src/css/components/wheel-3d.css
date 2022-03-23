@@ -1,0 +1,12 @@
+@keyframes wheel-3d {
+  100% {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
+
+.wheel-3d-animation {
+  animation-name: wheel-3d;
+  animation-duration: var(--wheel-spin-duration);
+  animation-iteration-count: infinite;
+  animation-duration: calc(var(--wheel-spin-duration) * 4);
+}
