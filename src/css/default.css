@@ -1,12 +1,11 @@
 :root {
-  --color: #222;
+  --color: #111;
   --bg-color: #eee;
 
   /* wheel variables */
-  --wheel-border: #ffa500;
-  --wheel-center: #ffa500;
-  --wheel-section: #00a5ff;
-  --wheel-section-hover: #f00;
+  --wheel-center: #333;
+  --wheel-section: #555;
+  --wheel-section-hover: #ffa500;
   --wheel-spin-duration: 1s;
 }
 

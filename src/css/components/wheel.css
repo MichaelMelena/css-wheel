@@ -1,22 +1,21 @@
 .wheel {
-  height: 10rem;
-  width: 10rem;
-  overflow: hidden;
-  background-color: var(--wheel-center);
+  height: 9.24rem;
+  width: 9.24rem;
+  background-color: var(--wheel-section);
   position: absolute;
   border-radius: 50%;
-  border: 0.25rem solid var(--wheel-border);
-  transform: rotate(15deg);
-}
+  overflow: hidden;
+} 
 
 .wheel-section {
-  width: 5rem;
-  height: 5rem;
+  width: 3.82rem;
+  height: 4.62rem;
   background-color: var(--wheel-section);
   clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
   position: absolute;
   animation-duration: var(--wheel-spin-duration);
   animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .wheel-center {
@@ -24,9 +23,9 @@
   height: 1rem;
   background-color: var(--wheel-center);
   border-radius: 50%;
-  left: 4.5rem;
-  top: 4.5rem;
-  position: absolute;
+  left: calc(50% - 0.5rem);
+  top: calc(50% - 0.5rem);
+  position: relative;
 }
 
 .wheel-section:hover {
@@ -34,54 +33,54 @@
 }
 
 .wheel :first-child {
-  left: 2.5rem;
+  left: 2.71rem;
   animation-name: wheel-1;
 }
 
 .wheel :nth-child(2) {
-  left: 4.25rem;
-  top: 0.75rem;
+  left: 4.37rem;
+  top: 0.66rem;
   transform: rotate(45deg);
   animation-name: wheel-2;
 }
 .wheel :nth-child(3) {
   transform: rotate(90deg);
-  left: 5rem;
-  top: 2.5rem;
   animation-name: wheel-3;
+  right: 0.39rem;
+  top: 2.31rem;
 }
 
 .wheel :nth-child(4) {
   transform: rotate(135deg);
-  top: 4.25rem;
-  left: 4.25rem;
+  left: 4.37rem;
+  bottom: 0.66rem;
   animation-name: wheel-4;
 }
 
 .wheel :nth-child(5) {
   transform: rotate(180deg);
-  top: 5rem;
-  left: 2.5rem;
+  bottom: 0;
+  left: 2.71rem;
   animation-name: wheel-5;
 }
 
 .wheel :nth-child(6) {
   transform: rotate(225deg);
-  top: 4.25rem;
-  left: 0.75rem;
+  right: 4.37rem;
+  bottom: 0.66rem;
   animation-name: wheel-6;
 }
 
 .wheel :nth-child(7) {
   transform: rotate(270deg);
-  top: 2.5rem;
-  left: 0rem;
+  top: 2.31rem;
+  left: 0.39rem;
   animation-name: wheel-7;
 }
 
 .wheel :nth-child(8) {
   transform: rotate(315deg);
-  top: 0.75rem;
-  left: 0.75rem;
+  top: 0.66rem;
+  right: 4.37rem;
   animation-name: wheel-8;
 }
