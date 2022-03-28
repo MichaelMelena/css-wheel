@@ -12,6 +12,7 @@
 
 .wheel-3d-animation {
   animation-name: wheel-3d;
+  margin-top: 5rem;
   animation-duration: var(--wheel-spin-duration);
   animation-iteration-count: infinite;
   animation-duration: calc(var(--wheel-spin-duration) * 4);
